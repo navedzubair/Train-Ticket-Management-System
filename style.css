@@ -1,0 +1,43 @@
+P,FOOTER,tr {text-align: center;}
+table { margin: auto; }
+tr.left{text-align:left}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#button span:after {
+  content: '�';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#button:hover span {
+  padding-right: 25px;
+}
+#button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+img#logo{
+-webkit-filter: drop-shadow(10px 10px 10px red);
+       filter: drop-shadow(8px 8px 10px red);
+}
+* {
+    max-width: 100%;
+    height: auto;
+	font-family: 'Roboto', sans-serif;
+}
